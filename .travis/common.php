@@ -10,10 +10,19 @@ function isLatestPhp()
     return getPhpVersion() === '7.1';
 }
 
+function isPhp5()
+{
+        return substr(getPhpVersion(), 0, 1) === '5';
+}
+
+function isNonExperimentalPhp()
+{
+        return getPhpVersion() !== 'nightly';
+}
+
 function isLatestSymfony()
 {
-    return getSymfonyVersion() === '3.3.*';
-}
+    return in_array(getSymfonyVersion(), array('3.4.*', '4.0.*'), true); }
 
 function getSymfonyVersion()
 {

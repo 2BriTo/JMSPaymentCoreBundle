@@ -14,7 +14,7 @@ if (isLatestPhp() && isLatestSymfony()) {
 }
 
 if (shouldBuildDocs()) {
-    run('sudo apt-get -qq update');
-    run('sudo apt-get install -y graphviz');
-    run('sudo -H pip install -r requirements.txt');
+//    run('sudo apt-get -qq update');
+//    run('sudo apt-get install -y graphviz');
+//    run('sudo -H pip install -r requirements.txt');
 }
